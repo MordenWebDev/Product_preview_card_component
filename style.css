@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  /* font-family: 'Fraunces', serif; */
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+}
+.product_component {
+  display: flex;
+
+  width: 700px;
+  border-radius: 16px;
+}
+img {
+  display: block;
+}
+.product_image_container {
+  width: 300px;
+  border-radius: 16px;
+}
+.product_image {
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.product_content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 1rem;
+  border-radius: 16px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.product_second_name {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+.product_name {
+  text-transform: uppercase;
+
+  letter-spacing: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.product_price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.product_price_orginal {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.product_off_price {
+  text-decoration: line-through;
+}
+.product_description {
+  line-height: 1.5rem;
+}
+.product_cta_button {
+  align-self: center;
+  padding: 1rem 2.5rem;
+  width: 300px;
+  background-color: hsl(158, 36%, 37%);
+  outline: none;
+  border: none;
+  display: flex;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 250ms linear;
+}
+.product_button_cart_icon {
+  margin-right: 1rem;
+}
+.product_cta_button:hover {
+  background-color: hsl(158, 36%, 27%);
+  cursor: pointer;
+}
+.yt {
+  color: rgb(165, 6, 6);
+}
+.youtube_link {
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 768px) {
+  .product_component {
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  .product_image {
+    display: none;
+  }
+  .product_image_container {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .product_content {
+    padding: 1rem;
+    border-top-right-radius: 0;
+
+    border-bottom-left-radius: 10px;
+  }
+}
